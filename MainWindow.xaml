@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:D8_porting_WPF"
         mc:Ignorable="d"
-        Title="Sceneriet" Height="400" Width="400" KeyUp="ApplicationKeyPress">
+        Title="Sceneriet" Height="500" Width="800" KeyUp="ApplicationKeyPress">
     <Grid>
-        <TextBlock x:Name="Title" Height="27" Margin="10,10,0,0" Text="Title" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Lucida Console"/>
-        <TextBlock x:Name="Text" Margin="10,40,100,15" Text="Text" Width="300" HorizontalAlignment="Left" VerticalAlignment="Stretch" FontSize="16" FontFamily="Lucida Console"/>
+        <TextBlock x:Name="Title" TextEffects=" " Height="27" Margin="10,10,0,0" Text="The Dream" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Lucida Console"></TextBlock>
+        <TextBlock x:Name="Text" Margin="10,40,100,15" Text="You're deep in the dreamscape..." Width="350" HorizontalAlignment="Left" VerticalAlignment="Stretch" FontSize="16" FontFamily="Lucida Console"/>
 
         <TextBlock x:Name="KeyPressDisplay" HorizontalAlignment="Stretch" Margin="0,30,0,0" TextWrapping="Wrap" Text="Keypress:" VerticalAlignment="Bottom" FontFamily="Lucida Console"/>
+        <Image HorizontalAlignment="Center" Height="700" Margin="0,64,0,0" VerticalAlignment="Top" Width="700" Source="/start.jpg"/>
     </Grid>
 </Window>

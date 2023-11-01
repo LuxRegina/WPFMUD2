@@ -30,19 +30,32 @@ namespace D8_porting_WPF
             string output = "Key pressed: ";
             output += e.Key.ToString();
             KeyPressDisplay.Text = output;
-            if(e.Key == Key.Escape)
+            if (e.Key == Key.Escape)
             {
                 System.Windows.Application.Current.Shutdown();
-            }
-            else if(e.Key == Key.A)
+            }         
+            else if (e.Key == Key.F)
             {
-                Title.Text = "AAAAAAAAAH!";
-                Text.Text = "Namen aaaaah!\nÅååååh!\nÄäääää!";
-            }
-            else if (e.Key == Key.I)
+                Scenery.DoCommand("F");
+
+                Title.Text = Scenery.CurrentTitle("F");
+                Text.Text = Scenery.CurrentText("");
+            }         
+            else if (e.Key == Key.X)
             {
-                Title.Text = "IIIIIIIIIH!";
-                Text.Text = "Jasäjabah iiiiiiiih!";
+                Scenery.DoCommand("X");
+
+                Title.Text = Scenery.CurrentTitle("X");
+                Text.Text = Scenery.CurrentText("");
+
+            }
+            else if (e.Key == Key.N)
+            {
+                Scenery.DoCommand("N");
+
+                Title.Text = Scenery.CurrentTitle("N");
+                Text.Text = Scenery.CurrentText("");
+
             }
         }
     }
